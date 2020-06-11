@@ -1,7 +1,0 @@
-UNBREAKABLE_LOCK:
-
-The Government Officers have found the place of the World's Most WANTED Black Hat Hacker, but he ran away leaving a FILE behind to convey his secret message...
-But they are not able to crack the PIN for that lock. Please help them in finding the hidden text.
-
-files:
-re
