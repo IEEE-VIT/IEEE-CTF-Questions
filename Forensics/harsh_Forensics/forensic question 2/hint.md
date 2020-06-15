@@ -1,0 +1,1 @@
+﻿save my life signature from bureaucrats and politicians
