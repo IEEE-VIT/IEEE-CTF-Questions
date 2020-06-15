@@ -1,0 +1,6 @@
+FIND A CAMERA
+Category: Forensic
+Statement:
+The President's Camera was stolen by separatists. A suspect carrying a USB key has been arrested . This Camera contains lot of passive information. Analyze the key and find out in which city camera is retained!
+Input the city name in lower case.
+Flag Format : IEEE{...}

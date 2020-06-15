@@ -1,0 +1,31 @@
+After downloading the challenge file, we analyzed it with file which gave us DOS/MBR type so we researched it more with mmls -t dos data which gave us 512 FAT32 USB disk. We used foremost to carve the data out and follow the procedure as given:
+1.
+# foremost -i data 
+
+which will generate the new folder as output with all the files extracted. we can view audit.txt to get more info on all files carved out.
+
+2. In the PNG folder we saw image with president’s camera.
+
+3. Then we tried with exiftools to extract the image exif data to get some info about the location, turns out it was deleted.
+
+4. Upon researching more we checked into zip folder which gave us another image of camera in the pictures folder so we checked with exiftools again as :
+exiftool camera.jpg
+
+which gave us the image location as Latitude and Longitude 😉 :
+North or South Latit|N
+Latitude            |43, 27, 52.038
+East or West Longitu|E
+Longitude           |11, 52, 53.322
+Altitude Reference  |Sea level
+Altitude            |16.7
+GPS Time (Atomic Clo|14:57:41.37
+GPS Satellites      |04
+GPS Image Direction |
+GPS Image Direction |247.35
+Geodetic Survey Data|WGS-84   
+GPS Date            |2008:10:23
+
+
+All that is left is to put them in online map to get the name of city .
+Flag:
+IEEE{arezzo}
