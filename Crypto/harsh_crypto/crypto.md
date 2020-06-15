@@ -10,7 +10,8 @@ then if u will try for decoding it through base
 as soon as you crack this link,
 u will see a HTML file, when you open it in browser and click on the print button,
 u will see a page showing contents hidden in the black.
-when u decode the strings using the ROT 13 you will be get something for which u will have to reverse it 
+when u decode the strings using the ROT 13 you will be get the hint telling that black bg is acctually a image 
+for which u will have to reverse it 
 the final decoded code will be the password to the stegonized image. There will also bee a hint in the source code of the page, which will give u a hint for steghide 
 u will recieve a file containing a flag... 
 IEEE{Mr.Robot}
