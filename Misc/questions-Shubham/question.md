@@ -1,1 +1,1 @@
-Q: Vinegar wasn't easily available near 742, Springfield
+Q: Vinegar wasn't easily available near Springfield where the Four fingered people live
