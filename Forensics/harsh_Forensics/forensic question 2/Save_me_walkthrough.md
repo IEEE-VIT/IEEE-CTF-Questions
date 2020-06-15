@@ -2,7 +2,7 @@
 
 First u will get a .dd extension file. There will be a hint along with it.
 
-save my life signature.
+save my life signature from bureaucrats and politicians
 
 Upon proper look, when u try hexdump u will notice the header of the file is corrupted.   
 
