@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S0urc3 me</title>
+</head>
+{% if user.is_authenticated %}  
+                <a style="color: yellow; font-size: 25px; font-weight: bolder; margin-right: 30px;" class="title">{{request.user.username}}</a>
+
+                
+  
+        </div>
+        {% else %}
+    <p style="color: coral;"></p>
+        {% endif %}
+<body style="background-color: black;">
+    <div class="container">
+            <div class="jumbotron" style="background-color: rgb(202, 35, 118);">
+                {% if error %}
+                <p>{{error}}</p>
+                {% endif %}
+                <form method="post" action="{% url 'black' %}">
+                    {% csrf_token %}    
+                <p style="color: coral;">Username: </p>
+                    <input name="username" type="text"><br>
+                    <br><p style="color: coral;">Password:</p>
+                    <input  name="password" type="password"><br><br>
+                    <button  class="btn btn-large btn-info" types="submit">Login</button>
+
+            </div>
+    </div>
+    <p style="color: white" id="message" ></p>
+
+</body>
+
+<script>
+var checkLogin=function(){
+    var password=document.getElementById("password").value;
+    if(document.getElementById("username").value !="admin"){
+        cosnole.log(username);
+        document.getElementById("message").innerHTML="Only Creator is allowed!!!";
+        return;
+    }else{
+        var password =md5(password);
+        if (password=="bdc87b9c894da5168059e00ebffb9077")
+        {
+            document.getElementById("button").onclick = function () {
+        location.href = "{% url 'home' %}";
+        }
+        }else{
+            document.getElementById("message").innerHTML="Try again....";
+    }
+    return;
+}
+
+}
+</script>
+
+
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Login</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Login</button>
+</form>
+
+<script>
+  var checkLogin=function(){
+      var password=document.getElementById("password").value;
+      if(document.getElementById("username").value !="admin"){
+
+          document.getElementById("message").innerHTML="Only Creator is allowed!!!";
+          return;
+      }else{
+          var password =md5(password);
+          if (password=="C13D23675B7A621212C3A6BB07E0E8DF")
+          {
+              document.getElementById("button").onclick = function () {
+          location.href = "{% url 'home' %}";
+          }
+          }else{
+              document.getElementById("message").innerHTML="Try again....";
+      }
+      return;
+  }
+  
+  }
+  </script>
+</body>
+</html>
