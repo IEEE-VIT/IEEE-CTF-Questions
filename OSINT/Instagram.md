@@ -1,4 +1,4 @@
-//Texted Madhav Bhaiya for adding the location and currently unable to add more followings so stuck there at 265.
+// Currently unable to add more followings so stuck there at 265.
 
 ## Q: I LEARNT THE IMPORTANCE OF BRANDING FROM IEEEVIT'S INSTAGRAM.
 
