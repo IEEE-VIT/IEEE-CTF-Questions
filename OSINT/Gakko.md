@@ -1,5 +1,3 @@
-// sent hemant the file to be added in the repo
-
 ## GAKKO AND I DEVELOPED OUR FIRST STYLISH IDEA IN THE CHATROOM
 
 ## SOLUTION:
@@ -48,3 +46,5 @@ Tunt dolor elit ex cupidatat culpa magna mollit velit id commodo consectetur tem
 - Connecting all the 32 lines' first letter, they get the flag.
 
 - FLAG: IEEECTF{OPENSOURCEISTHEBEST}
+
+- commit message is `fix navbar`
