@@ -1,4 +1,3 @@
-// Currently unable to add more followings so stuck there at 265.
 
 ## Q: I LEARNT THE IMPORTANCE OF BRANDING FROM IEEEVIT'S INSTAGRAM.
 
