@@ -10,6 +10,7 @@ Flag Format: IEEECTF{MYNAME}
 
 ## SOL:
 - They go to our IEEE-VIT website where in the sources they find an image called n00b.png
+- If they try the google image search they will get the result as sagittarius which is completely wrong and they might go off track
 - The picture is of a constellation which on finding out is called Draco 
 - On googling it, they find out that Draco Malfoy is a character in Harry Potter
 - and he and his dad were responsible for this animal's wrongful death sentencing which this animal later escaped from
