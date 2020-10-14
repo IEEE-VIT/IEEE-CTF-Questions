@@ -1,5 +1,3 @@
-# IEEE-VIT's website has an n00b. <br/>The first letter is really important somehwere
-
 ```
 The File directory of our website has an audio file named 'n00b' which is DTMF encoded.
 You need to decode this dual tone multiple frequency (the normal keypad tone thus predictable)

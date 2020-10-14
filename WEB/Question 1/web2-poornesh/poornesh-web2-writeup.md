@@ -1,4 +1,0 @@
-Website>Login>BruteForce>.shtml(SSI)/OS Command Injection
-
-(YET TO COMPLETE)
-COMPLETED BUILDING TILL BRUTEFORCE PART
