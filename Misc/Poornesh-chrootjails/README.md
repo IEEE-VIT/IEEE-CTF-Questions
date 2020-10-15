@@ -1,4 +1,4 @@
-#README:
+# README:
 <br /><br />
 mkdir /root/jailed<br />
 cd jailed<br />
@@ -30,7 +30,7 @@ ChrootDirectory /root/jailed <br />
 <br />
 service ssh restart<br />
 <br />
-#NOW SIMILARLY CREATE ANEW CHROOT JAIL
+### NOW SIMILARLY CREATE ANEW CHROOT JAIL
 <br /><br />
 mkdir /root/jail<br />
 cd jail<br />
