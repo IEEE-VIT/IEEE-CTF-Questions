@@ -3,11 +3,13 @@ UNBREAKABLE_LOCK:
 The Germans have sent a note:
 
 ++======================================++
-|| We have sent you a file.		||
+|| We have sent you a file.	  	||
 || We expect it to reach you by end	||
-|| of this month.			||
+|| of this month.		        ||
 || we are following some War techniques ||
-|| Oktober/44				||
-<+======================================++
+|| Oktober/40			        ||
+|| We don't believe in Kenngruppen      ||
+|| Our initial positions are always no.1||
+++======================================++
 file:
 Unbreakable_Lock
