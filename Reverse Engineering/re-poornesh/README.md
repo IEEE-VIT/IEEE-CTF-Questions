@@ -12,5 +12,5 @@
 11. You will find the flag = ieeectf{h4kun4_mat4ta_f0r3v3r}<br />
 
 ### Environment Variables:
-FLG = bsrjegv{d4otj4_cjl4fe_n0j3n3u}<br />
+FLG = zzdiuwo{a4ana4_ddk4bh_t0q3e3h}<br />
 FCMP = Unknown_FLG_CoMParis0n
