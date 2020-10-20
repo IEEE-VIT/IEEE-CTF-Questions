@@ -16,4 +16,4 @@ You will find the flag in the cookies<br />
 sudo snap install ruby --classic<br />
 bundle install (might take some time)<br /> 
 rails db:migrate(If not working, set yarn integrity check to false)<br />
-rails s -b <ip> -p <port>
+rails s -b (ip) -p (port)
