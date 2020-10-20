@@ -1,4 +1,5 @@
 # LOCKED? OR PWNED!?
+### NOTE: SANDBOXING IS REQUIRED FOR THIS CHALLENGE
 
 ### Question:
 Hey I tried a lot of combinations. It seems like its an unbreakable LOCK, Could you help me to open it?
