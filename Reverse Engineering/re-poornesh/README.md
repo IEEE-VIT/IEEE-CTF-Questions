@@ -1,5 +1,5 @@
 # README
-
+### NOTE: SANDBOXING IS REQUIRED FOR THIS CHALLENGE
 1. Download Unbreakable_Lock file<br />
 2. gdb Unbreakable_Lock<br />
 3. disassemble main<br />
