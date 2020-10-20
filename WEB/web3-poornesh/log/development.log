@@ -1,0 +1,243 @@
+Started GET "/" for 172.18.0.1 at 2020-10-20 18:22:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 424)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 279)
+Completed 200 OK in 7219ms (Views: 7204.4ms | ActiveRecord: 0.0ms | Allocations: 2493870)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:22:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 2614)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/" for 172.18.0.1 at 2020-10-20 18:36:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 424)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 277)
+Completed 200 OK in 332ms (Views: 320.6ms | ActiveRecord: 0.0ms | Allocations: 317025)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 2607)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/" for 172.18.0.1 at 2020-10-20 18:36:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 8)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 92)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 9781)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1003)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/help" for 172.18.0.1 at 2020-10-20 18:36:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.3ms | Allocations: 97)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 99)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 0.0ms | Allocations: 9994)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 995)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/challenges" for 172.18.0.1 at 2020-10-20 18:36:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 1.1ms | Allocations: 137)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 98)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 10028)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 998)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 2470.8ms | Allocations: 774282)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 2474.9ms | Allocations: 774655)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 86)
+Completed 200 OK in 2501ms (Views: 2494.8ms | ActiveRecord: 0.0ms | Allocations: 784972)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1001)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"bh/1CVQ36XqZRqT6du1LqkNlN0MZ2tk1GKOW9bEy2YASIzeHoE2BtaAJY27irdiPg9NTH2JWxAxTm6CczOEfiQ==", "session"=>{"name"=>"adfasdf", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "adfasdf"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 16ms (ActiveRecord: 1.3ms | Allocations: 3432)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 2.3ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 38.2ms | Allocations: 1584)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 82)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.0ms | Allocations: 11331)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 998)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"ZAsyGCS3tk9sgi1Byv6vLGcKxXUkqloMnj3VMFY3FkwYN/CW0M3egFXN6tVevjwJp7yhKV8mRzXVBeNZK+TQRQ==", "session"=>{"name"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms | Allocations: 974)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 1.6ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1367)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 82)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 11105)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1004)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
