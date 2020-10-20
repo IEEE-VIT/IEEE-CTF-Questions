@@ -1,4 +1,5 @@
 # README:
+### NOTE: SANDBOXING IS REQUIRED FOR THIS CHALLENGE
 <br /><br />
 mkdir /root/jailed<br />
 cd jailed<br />
