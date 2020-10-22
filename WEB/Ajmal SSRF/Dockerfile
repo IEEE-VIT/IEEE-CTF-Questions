@@ -1,8 +1,8 @@
-FROM node:12
+FROM nikolaik/python-nodejs:python3.7-nodejs12-slim
 
 WORKDIR /app
 COPY . /app
 RUN npm install
-RUN python -m http.server 3301 --bind 127.0.0.1 --directory /app/flag
-CMD node app.js
+RUN chmod +x run.sh
+CMD ./run.sh
 EXPOSE 2640
