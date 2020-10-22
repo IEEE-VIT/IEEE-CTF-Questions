@@ -1,5 +1,5 @@
 FROM ruby:2.5
-RUN apt-get update -qq && apt-get install -y nodejs
+RUN apt-get update -qq && apt-get install -y nodejs sqlite3 libsqlite3-dev
 RUN mkdir /app
 WORKDIR /app
 COPY Gemfile /app/Gemfile
