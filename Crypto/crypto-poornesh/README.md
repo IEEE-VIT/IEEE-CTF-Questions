@@ -1,3 +1,4 @@
+# GAMELOFT IN GIBBERISH!
 1. Download the main output file
 2. Open the main file in ghidra or IDA (Reverse Engineering Tools)
 3. Disassemble and Decompile the code and then understand the code.
