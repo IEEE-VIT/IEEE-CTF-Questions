@@ -1,3 +1,4 @@
+# CRYPT-4N4LY5!$
 1. open flag.txt
 2. decode the encoded cipher texts
 3. re the encrypted cipher texts by reverse engineering the encryptor
