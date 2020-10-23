@@ -6,3 +6,7 @@
 5. Now open that link, it will redirect you to a file, download the other file nd then open it.
 6. It has 2 keys Public and Private, either by bruteforcing the one digit keys or by using the clues in the main file they can get the key and can decrypt the file using that file.
 7. Once it is decrypted We get the flag as ieeectfintermediateatasphalt
+
+### FLAG
+FLAG FORMAT: ieeectf_______________<br />
+FLAG: ieeectfintermediateatasphalt
