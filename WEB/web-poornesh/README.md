@@ -1,5 +1,6 @@
 # HAPPY HALLOWEEN!
-ghost.html>HELP ME>login.php>LOGIN>nigol.php>SQLi>daolpu.php>shell.php>FLAG>flag.txt
+### SANDBOX IS REQUIRED FOR THIS QUESTION 
+ghost.html>HELP ME>login.php>LOGIN>nigol.php>SQLi>daolpu.php>payload.php>system(ls) (only ls should work)
 
 ### FLAG
 FLAG FORMAT: IEEECTF{}<br />
