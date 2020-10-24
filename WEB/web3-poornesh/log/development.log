@@ -359,3 +359,153 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.4ms | Allocations: 10477)
 
 
+Started GET "/" for 172.18.0.1 at 2020-10-23 22:30:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 424)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 279)
+Completed 200 OK in 187ms (Views: 178.9ms | ActiveRecord: 0.0ms | Allocations: 311975)
+
+
+Started GET "/challenges" for 172.18.0.1 at 2020-10-23 22:30:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 1.0ms | Allocations: 137)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 10034)
+
+
+Started GET "/users" for 172.18.0.1 at 2020-10-23 22:30:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 6666)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 86)
+Completed 200 OK in 28ms (Views: 21.5ms | ActiveRecord: 1.2ms | Allocations: 18024)
+
+
+Started GET "/challenges" for 172.18.0.1 at 2020-10-23 22:31:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 9784)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:31:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 141.6ms | Allocations: 177344)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 142.9ms | Allocations: 177721)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 86)
+Completed 200 OK in 154ms (Views: 152.8ms | ActiveRecord: 0.0ms | Allocations: 188049)
+
+
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"1G7N4VBKcTaydoBIEsUlOwBhRQaMqJJxLa/Yp8julSRtZJqJ0di8UXMHkCazLEjMxD6W/QG1CBadMjBRcv/L/Q==", "session"=>{"name"=>"hello", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "hello"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1828)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 1.1ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1584)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 82)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 11333)
+
+
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"7NoRo542DuMJZgq3dsOlT2pffFqEuz7wavJLAYwkaMJV0EbLH6TDhMgXGtnXKsi4rgCvoQmmpJfab6P3NjU2Gw==", "session"=>{"name"=>"user", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "user"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 217ms (ActiveRecord: 0.1ms | Allocations: 1095)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 0.6ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 1.1ms | Allocations: 619)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 82)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 10382)
+
+
+Started GET "/users" for 172.18.0.1 at 2020-10-23 22:32:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 746)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 86)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 10537)
+
+
+Started GET "/" for 172.18.0.1 at 2020-10-23 22:41:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 99)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 9789)
+
+
+Started GET "/challenges" for 172.18.0.1 at 2020-10-23 22:41:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 92)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 9795)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:41:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 0.6ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 1.0ms | Allocations: 618)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 82)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 10367)
+
+
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-23 22:42:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"K220H6MnCA7Nc9GtntmoNUV6bxoQpvjy0YUaaBevKJySZ+N3IrXFaQwCwcM/MMXCgSW84Z27YpVhGPKerb52RQ==", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 214ms (ActiveRecord: 0.2ms | Allocations: 1133)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:42:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 0.7ms | Allocations: 428)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 1.2ms | Allocations: 617)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 82)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 10404)
+
+
