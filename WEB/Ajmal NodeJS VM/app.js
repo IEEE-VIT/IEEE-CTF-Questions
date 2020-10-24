@@ -6,7 +6,7 @@ const { error } = require("console");
 const port=2640;
 app.use(bparser.urlencoded({extended:true}));
 console.log(__dirname)
-const sauce="ajmal"
+
 
 app.get("/",(req,res)=>{
   res.sendFile(path.join(__dirname+"/index.html"))
@@ -45,4 +45,4 @@ app.listen(port,()=>{
     console.log("Started")
 })
 
-new Proxy({}, {   set: function(me, key, value) { (value.constructor.constructor(" ")()) } })
+
