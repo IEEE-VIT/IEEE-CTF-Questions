@@ -20,7 +20,7 @@ app.post("/add",(req,res)=>{
     const vm=require("vm");
     //try {
       const ajmal=123;
-      var value=vm.runInNewContext(v1+v2,vm.createContext(Object.create(null)));
+      var value=vm.runInNewContext(v1+v2);
      // if(!error){
        // throw error;
      // }
