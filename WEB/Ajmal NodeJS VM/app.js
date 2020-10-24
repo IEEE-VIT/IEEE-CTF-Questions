@@ -29,7 +29,7 @@ app.post("/add",(req,res)=>{
         console.log(typeof(value))
         var va1=JSON.stringify(value);
         console.log(typeof(va1))
-        res.send(ajm.toString());
+        res.send(va1);
      // }
     //}
     //catch(err){
