@@ -10,7 +10,7 @@ if (!$select_db){
 $sql = "CREATE TABLE user_login (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 username VARCHAR(30) NOT NULL,
-password VARCHAR(50))";
+Password VARCHAR(50))";
 if (mysqli_query($connection, $sql)) {
   echo "Table created successfully";
 } else {
