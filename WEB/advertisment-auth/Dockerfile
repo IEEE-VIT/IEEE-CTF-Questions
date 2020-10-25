@@ -14,6 +14,7 @@ ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 
 # Start the main process.
+RUN bundle exec rake db:create db:migrate db:seed
 CMD ["rails", "server", "-b", "0.0.0.0"]
 #RUN rails server -b 0.0.0.0
 #RUN rm -f tmp/pids/server.pid

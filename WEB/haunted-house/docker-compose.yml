@@ -1,18 +1,11 @@
 version: "3.2"
 services:
   php:
-    build: './php/'
-    volumes:
-      - ./hello/:/var/www/html/hello/
-  apache:
-    build: './apache/'
+    build: .
     depends_on:
-      - php
       - mysql
     ports:
       - "8080:80"
-    volumes:
-      - ./hello/:/var/www/html/hello/
   mysql:
     image: mysql:5.6.40
     environment:

@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect('mysql', 'user', 'password');
+$connection = mysqli_connect(getenv('MYSQL_HOST'), 'user', 'password');
 if (!$connection){
     die("Database Connection Failed" . mysqli_error($connection));
 }
