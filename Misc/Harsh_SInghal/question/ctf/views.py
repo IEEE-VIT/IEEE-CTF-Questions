@@ -1,13 +1,22 @@
-from django.shortcuts import render , HttpResponse
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
-from django.contrib.auth.forms import PasswordChangeForm
-from django.contrib.auth import update_session_auth_hash
-from django.contrib.auth.decorators import login_required
+
+
 
 def login(request):
+    if request.method=='POST':
+        user=auth.authenticate(username=request.POST['username'],password=request.POST['password'])
+        if user is not None:
+            auth.login(request,user)
+            return redirect('brute')
+        else:
+            return render(request,'login.html',{'error':'username or password is inccorrect'})
+    else:
+        return render(request,'./login.html')
     return render(request,'./login.html')
+
+
 def zips(request):
     return render(request,'zips.html') 
 
