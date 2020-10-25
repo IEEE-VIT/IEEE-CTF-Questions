@@ -19,6 +19,6 @@ spec:
                   image: darthbenro008/php-server
                   ports:
                     - containerPort: 80
-                    env:
+                  env:
                         - name: MYSQL_HOST
                           value: mysql-cluster-ip-service
