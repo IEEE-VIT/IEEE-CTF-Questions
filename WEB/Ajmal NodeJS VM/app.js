@@ -6,7 +6,7 @@ const { error } = require("console");
 const port=2640;
 app.use(bparser.urlencoded({extended:true}));
 console.log(__dirname)
-const sauce="ajmal"
+
 
 app.get("/",(req,res)=>{
   res.sendFile(path.join(__dirname+"/index.html"))
@@ -20,7 +20,7 @@ app.post("/add",(req,res)=>{
     const vm=require("vm");
     //try {
       const ajmal=123;
-      var value=vm.runInNewContext(v1+v2,vm.createContext(Object.create(null)));
+      var value=vm.runInNewContext(v1+v2);
      // if(!error){
        // throw error;
      // }
@@ -29,7 +29,7 @@ app.post("/add",(req,res)=>{
         console.log(typeof(value))
         var va1=JSON.stringify(value);
         console.log(typeof(va1))
-        res.send(ajm.toString());
+        res.send(va1);
      // }
     //}
     //catch(err){
@@ -45,4 +45,4 @@ app.listen(port,()=>{
     console.log("Started")
 })
 
-new Proxy({}, {   set: function(me, key, value) { (value.constructor.constructor(" ")()) } })
+

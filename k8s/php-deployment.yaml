@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: php-deployment
+    labels:
+        component: php-server
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            component: php-server
+    template:
+        metadata:
+            labels:
+                component: php-server
+        spec:
+            containers:
+                - name: php-server
+                  image: darthbenro008/php-server
+                  ports:
+                    - containerPort: 80
+                  env:
+                        - name: MYSQL_HOST
+                          value: mysql-cluster-ip-service

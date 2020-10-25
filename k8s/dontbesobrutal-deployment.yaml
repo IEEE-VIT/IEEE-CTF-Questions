@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: dontbesobrtual-deployment
+    labels:
+        component: dontbesobrtual
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            component: dontbesobrtual
+    template:
+        metadata:
+            labels:
+                component: dontbesobrtual
+        spec:
+            containers:
+                - name: dontbesobrtual
+                  image: aryan9600/dontbesobrutal
