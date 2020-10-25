@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: advertisment-auth-deployment
+  labels:
+    component: advertisment-auth
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: advertisment-auth
+  template:
+    metadata:
+      labels:
+        component: advertisment-auth
+    spec:
+      containers:
+        - name: advertisment-auth
+          ports:
+            - containerPort: 3000
+          image: aryan9600/ieeectf-advertisment-auth
