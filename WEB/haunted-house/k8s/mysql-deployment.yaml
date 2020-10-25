@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+spec:
+  selector:
+    matchLabels:
+      component: mysql
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        component: mysql
+    spec:
+      containers:
+      - image: mysql:5.6.40
+        name: mysql
+        env:
+            - name: MYSQL_DATABASE
+              value: mashlog_demo
+            - name: MYSQL_PASSWORD
+              value: password
+            - name: MYSQL_ROOT_PASSWORD
+              value: ieeeroot
+            - name: MYSQL_USER
+              value: user
+        ports:
+        - containerPort: 3306
+          name: mysql
