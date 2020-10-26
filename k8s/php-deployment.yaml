@@ -16,7 +16,7 @@ spec:
         spec:
             containers:
                 - name: php-server
-                  image: darthbenro008/php-server
+                  image: aryan9600/ieeectf-haunted
                   ports:
                     - containerPort: 80
                   env:
