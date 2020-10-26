@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: jail-deployment
+    labels:
+        component: jail
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            component: jail
+    template:
+        metadata:
+            labels:
+                component: jail
+        spec:
+            containers:
+                - name: jail
+                  image: aryan9600/ieeectf-jail
+        

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: jailed-deployment
+    labels:
+        component: jailed
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+            component: jailed
+    template:
+        metadata:
+            labels:
+                component: jailed
+        spec:
+            containers:
+                - name: jailed
+                  image: aryan9600/ieeectf-jailed
+        
