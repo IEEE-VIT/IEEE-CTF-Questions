@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  client_body_timeout: "15"
+  client_header_timeout: "15"
+kind: ConfigMap
+metadata:
+  name: ingress-nginx-controller
+  namespace: kube-system
