@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ruby:
+    image: darthbenro008/ctf-ruby
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"

@@ -1,0 +1,511 @@
+Started GET "/" for 172.18.0.1 at 2020-10-20 18:22:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 424)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 279)
+Completed 200 OK in 7219ms (Views: 7204.4ms | ActiveRecord: 0.0ms | Allocations: 2493870)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:22:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 2614)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/" for 172.18.0.1 at 2020-10-20 18:36:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 424)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 277)
+Completed 200 OK in 332ms (Views: 320.6ms | ActiveRecord: 0.0ms | Allocations: 317025)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 2607)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/" for 172.18.0.1 at 2020-10-20 18:36:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 8)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 92)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 9781)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1003)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/help" for 172.18.0.1 at 2020-10-20 18:36:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.3ms | Allocations: 97)
+  Rendered layouts/_header.html.erb (Duration: 1.3ms | Allocations: 99)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 0.0ms | Allocations: 9994)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 995)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/challenges" for 172.18.0.1 at 2020-10-20 18:36:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 1.1ms | Allocations: 137)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 98)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 10028)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 998)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 2470.8ms | Allocations: 774282)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 2474.9ms | Allocations: 774655)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 86)
+Completed 200 OK in 2501ms (Views: 2494.8ms | ActiveRecord: 0.0ms | Allocations: 784972)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1001)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"bh/1CVQ36XqZRqT6du1LqkNlN0MZ2tk1GKOW9bEy2YASIzeHoE2BtaAJY27irdiPg9NTH2JWxAxTm6CczOEfiQ==", "session"=>{"name"=>"adfasdf", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "adfasdf"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 16ms (ActiveRecord: 1.3ms | Allocations: 3432)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 2.3ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 38.2ms | Allocations: 1584)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 82)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.0ms | Allocations: 11331)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 998)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"ZAsyGCS3tk9sgi1Byv6vLGcKxXUkqloMnj3VMFY3FkwYN/CW0M3egFXN6tVevjwJp7yhKV8mRzXVBeNZK+TQRQ==", "session"=>{"name"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 11ms (ActiveRecord: 0.3ms | Allocations: 974)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-20 18:36:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 1.6ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1367)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 82)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 11105)
+
+
+Started GET "/favicon.ico" for 172.18.0.1 at 2020-10-20 18:36:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MainController#not_found as 
+  Parameters: {"unmatched_route"=>"favicon"}
+DEPRECATION WARNING: render file: should be given the absolute path to a file (called from not_found at /app/app/controllers/main_controller.rb:3)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1004)
+
+
+  
+ActionView::MissingTemplate (Missing template app/public/404.html with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/app/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.0.3/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.0.3/app/views"
+  * "/app"
+  * "/"
+):
+  
+app/controllers/main_controller.rb:3:in `not_found'
+Started GET "/" for 172.18.0.1 at 2020-10-22 00:27:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 424)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 277)
+Completed 200 OK in 573ms (Views: 546.0ms | ActiveRecord: 0.0ms | Allocations: 319032)
+
+
+Started GET "/" for 172.18.0.1 at 2020-10-22 00:27:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 8)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 92)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.0ms | Allocations: 9764)
+
+
+Started GET "/help" for 172.18.0.1 at 2020-10-22 00:27:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.5ms | Allocations: 99)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 99)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 9995)
+
+
+Started GET "/challenges" for 172.18.0.1 at 2020-10-22 00:27:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 1.7ms | Allocations: 137)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 98)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 10029)
+
+
+Started GET "/users" for 172.18.0.1 at 2020-10-22 00:27:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 23.8ms | Allocations: 6644)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 86)
+Completed 200 OK in 59ms (Views: 49.0ms | ActiveRecord: 1.8ms | Allocations: 17979)
+
+
+Started GET "/users/new" for 172.18.0.1 at 2020-10-22 00:28:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2256.7ms | Allocations: 774828)
+  Rendered users/new.html.erb within layouts/application (Duration: 2259.0ms | Allocations: 775198)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 85)
+Completed 200 OK in 2283ms (Views: 2279.9ms | ActiveRecord: 0.0ms | Allocations: 785113)
+
+
+Started POST "/users" for 172.18.0.1 at 2020-10-22 00:28:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"/JkZm14ORI+yz8NL0vg+xK0fW+IQtuTupwj2WEWQs27bypJTRZBSGqH3oJDrR5pnMa/xGW/A71MDZ7lATDT1nw==", "user"=>{"name"=>"aafdfads", "email"=>"fasdfasdf@gmail.com", "secret_fact"=>"asdfasdf", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."name") = LOWER(?) LIMIT ?[0m  [["name", "aafdfads"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:40:in `block in create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "secret_fact", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "aafdfads"], ["email", "fasdfasdf@gmail.com"], ["secret_fact", "asdfasdf"], ["created_at", "2020-10-22 00:28:20.680278"], ["updated_at", "2020-10-22 00:28:20.680278"], ["password_digest", "$2a$12$DAFFDA6TJWHCxft0GC8S3uGo/ubH9FnWR0dGuff6W6ku02.NyxYQK"]]
+  ↳ app/controllers/users_controller.rb:40:in `block in create'
+  [1m[35m (57.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `block in create'
+Redirected to http://localhost:3000/users/14
+Completed 302 Found in 579ms (ActiveRecord: 58.9ms | Allocations: 6615)
+
+
+Started GET "/users/14" for 172.18.0.1 at 2020-10-22 00:28:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:54:in `set_user'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 247)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 86)
+Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 0.7ms | Allocations: 10871)
+
+
+Started GET "/users" for 172.18.0.1 at 2020-10-22 00:28:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 749)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 83)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.5ms | Allocations: 10505)
+
+
+Started GET "/" for 172.18.0.1 at 2020-10-22 00:28:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 99)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms | Allocations: 9763)
+
+
+Started GET "/users" for 172.18.0.1 at 2020-10-22 00:28:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 740)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 83)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.4ms | Allocations: 10477)
+
+
+Started GET "/" for 172.18.0.1 at 2020-10-23 22:30:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 424)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 279)
+Completed 200 OK in 187ms (Views: 178.9ms | ActiveRecord: 0.0ms | Allocations: 311975)
+
+
+Started GET "/challenges" for 172.18.0.1 at 2020-10-23 22:30:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 1.0ms | Allocations: 137)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 10034)
+
+
+Started GET "/users" for 172.18.0.1 at 2020-10-23 22:30:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 6666)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 86)
+Completed 200 OK in 28ms (Views: 21.5ms | ActiveRecord: 1.2ms | Allocations: 18024)
+
+
+Started GET "/challenges" for 172.18.0.1 at 2020-10-23 22:31:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 9784)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:31:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 141.6ms | Allocations: 177344)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 142.9ms | Allocations: 177721)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 86)
+Completed 200 OK in 154ms (Views: 152.8ms | ActiveRecord: 0.0ms | Allocations: 188049)
+
+
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"1G7N4VBKcTaydoBIEsUlOwBhRQaMqJJxLa/Yp8julSRtZJqJ0di8UXMHkCazLEjMxD6W/QG1CBadMjBRcv/L/Q==", "session"=>{"name"=>"hello", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "hello"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1828)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 1.1ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1584)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 82)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 11333)
+
+
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"7NoRo542DuMJZgq3dsOlT2pffFqEuz7wavJLAYwkaMJV0EbLH6TDhMgXGtnXKsi4rgCvoQmmpJfab6P3NjU2Gw==", "session"=>{"name"=>"user", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "user"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 217ms (ActiveRecord: 0.1ms | Allocations: 1095)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:32:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 0.6ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 1.1ms | Allocations: 619)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 82)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 10382)
+
+
+Started GET "/users" for 172.18.0.1 at 2020-10-23 22:32:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 746)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 86)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 10537)
+
+
+Started GET "/" for 172.18.0.1 at 2020-10-23 22:41:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 99)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 9789)
+
+
+Started GET "/challenges" for 172.18.0.1 at 2020-10-23 22:41:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#challenges as HTML
+  Rendering static_pages/challenges.html.erb within layouts/application
+  Rendered static_pages/challenges.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 92)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 9795)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:41:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 0.6ms | Allocations: 429)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 1.0ms | Allocations: 618)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 82)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 10367)
+
+
+Started POST "/authentication/login" for 172.18.0.1 at 2020-10-23 22:42:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#authlogin as HTML
+  Parameters: {"authenticity_token"=>"K220H6MnCA7Nc9GtntmoNUV6bxoQpvjy0YUaaBevKJySZ+N3IrXFaQwCwcM/MMXCgSW84Z27YpVhGPKerb52RQ==", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:9:in `authlogin'
+Redirected to http://localhost:3000/authentication/login
+Completed 302 Found in 214ms (ActiveRecord: 0.2ms | Allocations: 1133)
+
+
+Started GET "/authentication/login" for 172.18.0.1 at 2020-10-23 22:42:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by AuthenticationController#login as HTML
+  Rendering authentication/login.html.erb within layouts/application
+  Rendered layouts/_login.html.erb (Duration: 0.7ms | Allocations: 428)
+  Rendered authentication/login.html.erb within layouts/application (Duration: 1.2ms | Allocations: 617)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 82)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 10404)
+
+

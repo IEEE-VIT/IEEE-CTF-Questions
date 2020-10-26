@@ -1,0 +1,32 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+    name: ingress-service
+    annotations:
+        kubernetes.io/ingress.class: nginx
+        nginx.ingress.kubernetes.io/use-regex: 'true'
+        nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+    rules:
+        - http:
+              paths:
+                  - path: /ssrf(/|$)(.*)
+                    backend:
+                          serviceName: ssrf-cluster-ip-service
+                          servicePort: 2640
+                  - path: /node-vm(/|$)(.*)
+                    backend:
+                        serviceName: node-vm-cluster-ip-service
+                        servicePort: 4000
+                  - path: /rami(/|$)(.*)
+                    backend:
+                        serviceName: dbsb-cluster-ip-service
+                        servicePort: 2999
+                  - path: /advertisment(/|$)(.*)
+                    backend:
+                        serviceName: advertisment-auth-cluster-ip-service
+                        servicePort: 3080
+                  - path: /haunted(/|$)(.*)
+                    backend:
+                        serviceName: php-cluster-ip-service
+                        servicePort: 8080

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: dbsb-deployment
+    labels:
+        component: dbsb
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            component: dbsb
+    template:
+        metadata:
+            labels:
+                component: dbsb
+        spec:
+            containers:
+                - name: dbsb
+                  image: aryan9600/dontbesobrutal

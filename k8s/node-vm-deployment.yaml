@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: node-vm-deployment
+    labels:
+        component: node-vm
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            component: node-vm
+    template:
+        metadata:
+            labels:
+                component: node-vm
+        spec:
+            containers:
+                - name: node-vm
+                  image: aryan9600/ieeectf-nodejs-vm
+        

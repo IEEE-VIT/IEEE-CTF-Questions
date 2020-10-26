@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: pwn-deployment
+    labels:
+        component: pwn
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            component: pwn
+    template:
+        metadata:
+            labels:
+                component: pwn
+        spec:
+            containers:
+                - name: pwn
+                  image: aryan9600/ieeectf-pwn
+        

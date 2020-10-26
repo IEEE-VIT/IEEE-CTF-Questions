@@ -1,0 +1,17 @@
+version: "3.2"
+services:
+  php:
+    build: .
+    depends_on:
+      - mysql
+    ports:
+      - "8080:80"
+  mysql:
+    image: mysql:5.6.40
+    environment:
+      - MYSQL_ROOT_PASSWORD=ieeeroot
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=mashlog_demo
+    ports:
+        - "3306:3306"

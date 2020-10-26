@@ -1,0 +1,203 @@
+GNU gdb (Debian 8.3.1-1) 8.3.1
+Copyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./Unbreakable_Lock...
+(No debugging symbols found in ./Unbreakable_Lock)
+(gdb) run
+Starting program: /root/Desktop/PROJECTS/ctf/poornesh_ctf_questions/re-poornesh/re1/Unbreakable_Lock 
+Usage: <key>
+[Inferior 1 (process 2722) exited normally]
+(gdb) run key
+Starting program: /root/Desktop/PROJECTS/ctf/poornesh_ctf_questions/re-poornesh/re1/Unbreakable_Lock key
+Checking License: key
+WRONG!
+[Inferior 1 (process 2726) exited normally]
+(gdb) disas main
+Dump of assembler code for function main:
+   0x08049192 <+0>:	lea    0x4(%esp),%ecx
+   0x08049196 <+4>:	and    $0xfffffff0,%esp
+   0x08049199 <+7>:	pushl  -0x4(%ecx)
+   0x0804919c <+10>:	push   %ebp
+   0x0804919d <+11>:	mov    %esp,%ebp
+   0x0804919f <+13>:	push   %esi
+   0x080491a0 <+14>:	push   %ebx
+   0x080491a1 <+15>:	push   %ecx
+   0x080491a2 <+16>:	sub    $0x1c,%esp
+   0x080491a5 <+19>:	call   0x80490d0 <__x86.get_pc_thunk.bx>
+   0x080491aa <+24>:	add    $0x2e56,%ebx
+   0x080491b0 <+30>:	mov    %ecx,%esi
+   0x080491b2 <+32>:	cmpl   $0x2,(%esi)
+   0x080491b5 <+35>:	jne    0x8049267 <main+213>
+   0x080491bb <+41>:	sub    $0xc,%esp
+   0x080491be <+44>:	lea    -0x1ff8(%ebx),%eax
+   0x080491c4 <+50>:	push   %eax
+   0x080491c5 <+51>:	call   0x8049050 <getenv@plt>
+   0x080491ca <+56>:	add    $0x10,%esp
+   0x080491cd <+59>:	mov    %eax,-0x1c(%ebp)
+   0x080491d0 <+62>:	sub    $0xc,%esp
+   0x080491d3 <+65>:	lea    -0x1ff4(%ebx),%eax
+   0x080491d9 <+71>:	push   %eax
+   0x080491da <+72>:	call   0x8049050 <getenv@plt>
+   0x080491df <+77>:	add    $0x10,%esp
+   0x080491e2 <+80>:	mov    %eax,-0x20(%ebp)
+   0x080491e5 <+83>:	mov    0x4(%esi),%eax
+   0x080491e8 <+86>:	add    $0x4,%eax
+   0x080491eb <+89>:	mov    (%eax),%eax
+   0x080491ed <+91>:	sub    $0x8,%esp
+   0x080491f0 <+94>:	push   %eax
+   0x080491f1 <+95>:	lea    -0x1fef(%ebx),%eax
+   0x080491f7 <+101>:	push   %eax
+   0x080491f8 <+102>:	call   0x8049040 <printf@plt>
+   0x080491fd <+107>:	add    $0x10,%esp
+   0x08049200 <+110>:	mov    0x4(%esi),%eax
+   0x08049203 <+113>:	add    $0x4,%eax
+   0x08049206 <+116>:	mov    (%eax),%eax
+   0x08049208 <+118>:	sub    $0x8,%esp
+   0x0804920b <+121>:	pushl  -0x20(%ebp)
+   0x0804920e <+124>:	push   %eax
+   0x0804920f <+125>:	call   0x8049030 <strcmp@plt>
+   0x08049214 <+130>:	add    $0x10,%esp
+--Type <RET> for more, q to quit, c to continue without paging--
+   0x08049217 <+133>:	test   %eax,%eax
+   0x08049219 <+135>:	jne    0x8049253 <main+193>
+   0x0804921b <+137>:	sub    $0xc,%esp
+   0x0804921e <+140>:	lea    -0x1fd9(%ebx),%eax
+   0x08049224 <+146>:	push   %eax
+   0x08049225 <+147>:	call   0x8049060 <puts@plt>
+   0x0804922a <+152>:	add    $0x10,%esp
+   0x0804922d <+155>:	cmpl   $0x0,-0x1c(%ebp)
+   0x08049231 <+159>:	je     0x8049238 <main+166>
+   0x08049233 <+161>:	mov    -0x1c(%ebp),%eax
+   0x08049236 <+164>:	jmp    0x804923e <main+172>
+   0x08049238 <+166>:	lea    -0x1fc9(%ebx),%eax
+   0x0804923e <+172>:	sub    $0x8,%esp
+   0x08049241 <+175>:	push   %eax
+   0x08049242 <+176>:	lea    -0x1fb8(%ebx),%eax
+   0x08049248 <+182>:	push   %eax
+   0x08049249 <+183>:	call   0x8049040 <printf@plt>
+   0x0804924e <+188>:	add    $0x10,%esp
+   0x08049251 <+191>:	jmp    0x8049279 <main+231>
+   0x08049253 <+193>:	sub    $0xc,%esp
+   0x08049256 <+196>:	lea    -0x1fae(%ebx),%eax
+   0x0804925c <+202>:	push   %eax
+   0x0804925d <+203>:	call   0x8049060 <puts@plt>
+   0x08049262 <+208>:	add    $0x10,%esp
+   0x08049265 <+211>:	jmp    0x8049279 <main+231>
+   0x08049267 <+213>:	sub    $0xc,%esp
+   0x0804926a <+216>:	lea    -0x1fa7(%ebx),%eax
+   0x08049270 <+222>:	push   %eax
+   0x08049271 <+223>:	call   0x8049060 <puts@plt>
+   0x08049276 <+228>:	add    $0x10,%esp
+   0x08049279 <+231>:	mov    $0x0,%eax
+   0x0804927e <+236>:	lea    -0xc(%ebp),%esp
+   0x08049281 <+239>:	pop    %ecx
+   0x08049282 <+240>:	pop    %ebx
+   0x08049283 <+241>:	pop    %esi
+   0x08049284 <+242>:	pop    %ebp
+   0x08049285 <+243>:	lea    -0x4(%ecx),%esp
+   0x08049288 <+246>:	ret    
+End of assembler dump.
+(gdb) br *main
+Breakpoint 1 at 0x8049192
+(gdb) br *main+133
+Breakpoint 2 at 0x8049217
+(gdb) run key
+Starting program: /root/Desktop/PROJECTS/ctf/poornesh_ctf_questions/re-poornesh/re1/Unbreakable_Lock key
+
+Breakpoint 1, 0x08049192 in main ()
+(gdb) c
+Continuing.
+Checking License: key
+
+Breakpoint 2, 0x08049217 in main ()
+(gdb) info registers 
+eax            0x1                 1
+ecx            0x55                85
+edx            0xffffd297          -11625
+ebx            0x804c000           134529024
+esp            0xffffcf90          0xffffcf90
+ebp            0xffffcfb8          0xffffcfb8
+esi            0xffffcfd0          -12336
+edi            0xf7f97000          -134647808
+eip            0x8049217           0x8049217 <main+133>
+eflags         0x286               [ PF SF IF ]
+cs             0x23                35
+ss             0x2b                43
+ds             0x2b                43
+es             0x2b                43
+fs             0x0                 0
+gs             0x63                99
+(gdb) set $eax=0
+(gdb) info registers 
+eax            0x0                 0
+ecx            0x55                85
+edx            0xffffd297          -11625
+ebx            0x804c000           134529024
+esp            0xffffcf90          0xffffcf90
+ebp            0xffffcfb8          0xffffcfb8
+esi            0xffffcfd0          -12336
+edi            0xf7f97000          -134647808
+eip            0x8049217           0x8049217 <main+133>
+eflags         0x286               [ PF SF IF ]
+cs             0x23                35
+ss             0x2b                43
+ds             0x2b                43
+es             0x2b                43
+fs             0x0                 0
+gs             0x63                99
+(gdb) ni
+0x08049219 in main ()
+(gdb) 
+0x0804921b in main ()
+(gdb) 
+0x0804921e in main ()
+(gdb) 
+0x08049224 in main ()
+(gdb) 
+0x08049225 in main ()
+(gdb) 
+Access Granted!
+0x0804922a in main ()
+(gdb) 
+0x0804922d in main ()
+(gdb) 
+0x08049231 in main ()
+(gdb) 
+0x08049233 in main ()
+(gdb) 
+0x08049236 in main ()
+(gdb) 
+0x0804923e in main ()
+(gdb) 
+0x08049241 in main ()
+(gdb) 
+0x08049242 in main ()
+(gdb) 
+0x08049248 in main ()
+(gdb) 
+0x08049249 in main ()
+(gdb) 
+FLAG :IEEECTF{H4KUN4_MAT4TA_F0r3V3R}
+0x0804924e in main ()
+(gdb) 
+0x08049251 in main ()
+(gdb) Quit
+(gdb) quit
+A debugging session is active.
+
+	Inferior 1 [process 2755] will be killed.
+
+Quit anyway? (y or n) y
+

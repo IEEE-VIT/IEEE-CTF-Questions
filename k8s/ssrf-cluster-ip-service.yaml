@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: ssrf-cluster-ip-service
+spec:
+    type: ClusterIP
+    selector:
+        component: ssrf
+    ports:
+        - port: 2640
+          targetPort: 2640

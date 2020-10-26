@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: ssrf-deployment
+    labels:
+        component: ssrf
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            component: ssrf
+    template:
+        metadata:
+            labels:
+                component: ssrf
+        spec:
+            containers:
+                - name: ssrf
+                  image: aryan9600/ieeectf-ssrf
+        
