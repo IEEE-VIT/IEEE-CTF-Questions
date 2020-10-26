@@ -7,5 +7,5 @@ spec:
     selector:
         component: advertisment-auth
     ports:
-        - port: 3000
+        - port: 3080
           targetPort: 3000

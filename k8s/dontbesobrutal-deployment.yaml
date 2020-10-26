@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: dontbesobrtual-deployment
+    name: dbsb-deployment
     labels:
-        component: dontbesobrtual
+        component: dbsb
 spec:
     replicas: 3
     selector:
         matchLabels:
-            component: dontbesobrtual
+            component: dbsb
     template:
         metadata:
             labels:
-                component: dontbesobrtual
+                component: dbsb
         spec:
             containers:
-                - name: dontbesobrtual
+                - name: dbsb
                   image: aryan9600/dontbesobrutal

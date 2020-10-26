@@ -16,5 +16,5 @@ spec:
         spec:
             containers:
                 - name: node-vm
-                  image: aryan9600/ieeectf-node-vm
+                  image: aryan9600/ieeectf-nodejs-vm
         

@@ -7,5 +7,5 @@ RUN pip install -r requirements.txt
 COPY . /code/
 RUN python manage.py migrate
 RUN python manage.py shell < create_user.py
-CMD python manage.py runserver 0.0.0.0:8000
+CMD gunicorn -b :8000 --workers 2 crypto.wsgi
 EXPOSE 8000
