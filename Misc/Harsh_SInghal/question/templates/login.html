@@ -1,29 +1,62 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  
+<meta charset="UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>Login
+</title>
 {%load static%}
 
-  <script src="{% static 'js/md5.min.js' %}"></script>
+  
+<script src="{% static 'js/md5.min.js' %}">
+</script>
+
 
 </head>
-<body>
 
-<br><br><br>
+
+<body style="background-color: black; color: white;">
+
+
+<br>
+----------------------------------------------------------------
+<br>
+
+
 <div class="container">
-  <div class="main">
+  
+
+<div class="main">
   <h2>Login</h2>
-  <form id="form_id" method="post" name="myform">
-  <label>User Name :</label>
-  <input type="text" name="username" id="username"/>
-  <label>Password :</label>
-  <input type="password" name="password" id="password"/>
-  <input type="button" value="Login" id="submit" onclick="validate()"/>
-  </form>
-  </div>
-  </div>
+  
+
+<form class="form-signin" method="POST" action="{% url 'login' %}">
+    <h1 class="h3 mb-3 font-weight-normal">Welcome Back user</h1>
+    {% csrf_token %}
+    
+<label class="sr-only">Username
+</label>
+    
+<input type="text" class="md-textarea form-control" name="username" placeholder="Username" required >  
+   
+<br>
+    
+<input type="password" name="password" class="form-control" placeholder="Password" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  
+</div>
+  
+</div>
+
+
+
+  
 
 <script>
   var attempt = 3;
@@ -36,20 +69,14 @@ alert ("Login successfully");
 window.location = $.name; 
 return false;
 }
-else{
-attempt --;
-alert("You have left "+attempt+" attempt;");
+}
 
-if( attempt == 0){
-document.getElementById("username").disabled = true;
-document.getElementById("password").disabled = true;
-document.getElementById("submit").disabled = true;
-return false;
-}
-}
-}
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+
 
 </body>
+
 </html>
