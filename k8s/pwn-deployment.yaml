@@ -17,4 +17,5 @@ spec:
             containers:
                 - name: pwn
                   image: aryan9600/ieeectf-pwn
-        
+                  securityContext:
+                      privileged: true

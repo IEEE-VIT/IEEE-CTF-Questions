@@ -17,4 +17,5 @@ spec:
             containers:
                 - name: jail
                   image: aryan9600/ieeectf-jail
-        
+                  securityContext:
+                      privileged: true

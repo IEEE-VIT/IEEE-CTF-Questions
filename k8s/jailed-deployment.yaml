@@ -17,4 +17,5 @@ spec:
             containers:
                 - name: jailed
                   image: aryan9600/ieeectf-jailed
-        
+                  securityContext:
+                      privileged: true
