@@ -26,7 +26,11 @@ spec:
                     backend:
                         serviceName: dbsb-cluster-ip-service
                         servicePort: 2999
-                  - path: /advertisment(/|$)(.*)
+                  - path: /web(/|$)(.*)
+                    backend:
+                        serviceName: advertisment-auth-cluster-ip-service
+                        servicePort: 3080
+                  - path: /assets(/|$)(.*)
                     backend:
                         serviceName: advertisment-auth-cluster-ip-service
                         servicePort: 3080

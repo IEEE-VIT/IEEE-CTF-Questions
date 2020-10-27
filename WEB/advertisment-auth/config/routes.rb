@@ -14,6 +14,6 @@ Rails.application.routes.draw do
       get '*unmatched_route', to: 'main#not_found'
       get '*unprocessable_entity', to: 'main#not_found'
   end
- 
-  
+  get '*unmatched_route', to: 'main#not_found'
+  get '*unprocessable_entity', to: 'main#not_found'
 end
