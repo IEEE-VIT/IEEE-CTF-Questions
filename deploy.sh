@@ -6,7 +6,7 @@ docker build -t aryan9600/ieeectf-nodejs-vm:latest -t aryan9600/ieeectf-nodejs-v
 
 docker build -t aryan9600/ieeectf-haunted:latest -t aryan9600/ieeectf-haunted:$SHA -f ./WEB/haunted-house/Dockerfile ./WEB/haunted-house
 
-docker build -t aryan9600/ieeectf-advertisment:latest -t aryan9600/ieeectf-advertisment-auth:$SHA -f ./WEB/advertisment-auth/Dockerfile ./WEB/advertisment-auth
+docker build -t aryan9600/ieeectf-advertisment-auth:latest -t aryan9600/ieeectf-advertisment-auth:$SHA -f ./WEB/advertisment-auth/Dockerfile ./WEB/advertisment-auth
 
 docker build -t aryan9600/ieeectf-ssrf:latest -t aryan9600/ieeectf-ssrf:$SHA -f ./WEB/Ajmal\ SSRF/Dockerfile ./WEB/Ajmal\ SSRF
 
@@ -43,7 +43,7 @@ kubectl apply -f k8s
 # kubectl patch configmap tcp-services -n kube-system --patch "$(cat k8s/patch.json)"
 # kubectl patch deployment ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-controller-patch.yaml)" -n kube-system
 kubectl set image deployments/advertisment-auth-deployment advertisment=aryan9600/ieeectf-advertisment-auth:$SHA
-kubectl set image deployments/dontbesobrutal-deployment dbsb=aryan9600/ieeectf-dontbesobrutal:$SHA
+kubectl set image deployments/dbsb-deployment dbsb=aryan9600/ieeectf-dontbesobrutal:$SHA
 kubectl set image deployments/node-vm-deployment node-vm=aryan9600/ieeectf-nodejs-vm:$SHA
 kubectl set image deployments/php-deployment php-server=aryan9600/ieeectf-haunted:$SHA
 kubectl set image deployments/ssrf-deployment ssrf=aryan9600/ieeectf-ssrf:$SHA

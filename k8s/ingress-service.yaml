@@ -30,8 +30,7 @@ spec:
                     backend:
                         serviceName: advertisment-auth-cluster-ip-service
                         servicePort: 3080
-                  - path: /haunted/
-                    pathType: Prefix
+                  - path: /haunted(/|$)(.*)
                     backend:
                         serviceName: php-cluster-ip-service
                         servicePort: 8080
