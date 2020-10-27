@@ -7,7 +7,7 @@
 <body class="container" id="body_bg">
 <div <div align="center">
 
-<a class="btn" href="/hello/nigol.php"><h1 class="h">LOGIN</h1></a>
+<a class="btn" href="/haunted/hello/nigol.php"><h1 class="h">LOGIN</h1></a>
 <p>OPEN THE DOOR WITH CORRECT KEY TO ENTER THE ROOM</p>
     <form id="login-form" method="post" action="authen_login.php" >
         <table class="bottom-container" border="0.5" >
@@ -29,7 +29,7 @@
         </table>
     </form>
 		</div>
-<center><a class="btn" href="/hello/ghost.html">HOME</a></center>
+<center><a class="btn" href="/haunted/hello/ghost.html">HOME</a></center>
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>
 <center><a class="btn" href="#">JUST LIKE SHAZAM! EVEN MY LAST NAME IS REALLY POWERFUL!</a></center>

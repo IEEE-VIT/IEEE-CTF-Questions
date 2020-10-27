@@ -16,11 +16,11 @@ $count = mysqli_num_rows($result);
 if ($count == 1){
 
 echo "Login Credentials verified";
-echo "<script type='text/javascript'>alert(window.location='/hello/9Gems.html')</script>";
+echo "<script type='text/javascript'>alert(window.location='/haunted/hello/9Gems.html')</script>";
 
 }else{
 echo "Invalid Login Credentials";
-echo "<script>alert(window.location='/hello/login.php#INVALID LOGIN CREDENTIALS')</script>";
+echo "<script>alert(window.location='/haunted/hello/login.php#INVALID LOGIN CREDENTIALS')</script>";
 }
 }
 ?>
