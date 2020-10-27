@@ -7,8 +7,8 @@ metadata:
         nginx.ingress.kubernetes.io/use-regex: 'true'
         nginx.ingress.kubernetes.io/rewrite-target: /$2
         nginx.ingress.kubernetes.io/limit-connections: "5"
-        nginx.ingress.kubernetes.io/limit-rpm: "3"
-        nginx.ingress.kubernetes.io/limit-burst-multiplier: "3"
+        nginx.ingress.kubernetes.io/limit-rpm: "10"
+        nginx.ingress.kubernetes.io/limit-burst-multiplier: "10"
 
 spec:
     rules:
