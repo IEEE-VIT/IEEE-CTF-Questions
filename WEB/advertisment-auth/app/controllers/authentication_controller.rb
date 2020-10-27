@@ -17,7 +17,7 @@ class AuthenticationController < ApplicationController
     else
       cookies["challenge"] = "incorrect"
     end
-    redirect_to '/authentication/login'
+    redirect_to '/advertisment/authentication/login'
   end
   
 end
