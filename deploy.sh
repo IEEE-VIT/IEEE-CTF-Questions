@@ -42,7 +42,7 @@ docker push aryan9600/ieeectf-re:$SHA
 kubectl apply -f k8s
 # kubectl patch configmap tcp-services -n kube-system --patch "$(cat k8s/patch.json)"
 # kubectl patch deployment ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-controller-patch.yaml)" -n kube-system
-kubectl set image deployments/advertisment-auth-deployment advertisment=aryan9600/ieeectf-advertisment-auth:$SHA
+kubectl set image deployments/advertisment-auth-deployment advertisment-auth=aryan9600/ieeectf-advertisment-auth:$SHA
 kubectl set image deployments/dbsb-deployment dbsb=aryan9600/ieeectf-dontbesobrutal:$SHA
 kubectl set image deployments/node-vm-deployment node-vm=aryan9600/ieeectf-nodejs-vm:$SHA
 kubectl set image deployments/php-deployment php-server=aryan9600/ieeectf-haunted:$SHA
