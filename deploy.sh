@@ -14,8 +14,7 @@ docker build -t aryan9600/ieeectf-jail:latest -t aryan9600/ieeectf-jail:$SHA -f 
 
 docker build -t aryan9600/ieeectf-jailed:latest -t aryan9600/ieeectf-jailed:$SHA -f ./Misc/Poornesh-chrootjails/jailed/Dockerfile ./Misc/Poornesh-chrootjails/jailed
 
-docker build -t aryan9600/ieeectf-re:latest -t aryan9600/ieeectf-re:$SHA -f ./Reverse\ Engineering/re-poornesh/Dockerfile ./Reverse\ Engineering/re-poornesh
-
+docker build -t aryan9600/ieeectf-re:latest -t aryan9600/ieeectf-re:$SHA -f ./Reverse\ Engineering/ubuntu-re/Dockerfile ./Reverse\ Engineering/ubuntu-re
 
 docker push aryan9600/ieeectf-pwn:latest
 docker push aryan9600/ieeectf-dontbesobrutal:latest
