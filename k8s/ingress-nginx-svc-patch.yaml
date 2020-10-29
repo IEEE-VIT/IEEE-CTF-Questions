@@ -1,0 +1,17 @@
+spec:
+  ports:
+  - nodePort: 31100
+    port: 9000
+    name: pwn
+  - nodePort: 31101
+    port: 9001
+    name: re
+  - nodePort: 31102
+    port: 9002
+    name: jail
+  - nodePort: 31103
+    port: 9003
+    name: jailed
+  - nodePort: 31104
+    port: 6969
+    name: pyjail
