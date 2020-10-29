@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: pyjail-cluster-ip-service
+spec:
+    type: ClusterIP
+    selector:
+        component: pyjail
+    ports:
+        - port: 6969
+          targetPort: 6969

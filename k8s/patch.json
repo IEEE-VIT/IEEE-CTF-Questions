@@ -4,6 +4,7 @@
             "9000": "default/pwn-cluster-ip-service:9000",
             "9002": "default/jail-cluster-ip-service:9002",
             "9001": "default/re-cluster-ip-service:9001",
-            "9003": "default/jailed-cluster-ip-service:9003"
+            "9003": "default/jailed-cluster-ip-service:9003",
+            "6969": "default/pyjail-cluster-ip-service:6969"
         }
 }

@@ -1,0 +1,22 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pyjail-deployment
+  labels:
+    component: pyjail
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: pyjail
+  template:
+    metadata:
+      labels:
+        component: pyjail
+    spec:
+      containers:
+        - name: pyjail
+          ports:
+            - containerPort: 6969
+          image: aryan9600/ieeectf-pyjail
