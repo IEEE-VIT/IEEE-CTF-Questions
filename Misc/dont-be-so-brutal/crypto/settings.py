@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['0da1686b.ngrok.io','*']
 
+USE_X_FORWARDED_HOST = True
+FORCE_SCRIPT_NAME = '/rami'
+
 
 # Application definition
 
