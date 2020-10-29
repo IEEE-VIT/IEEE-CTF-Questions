@@ -2,7 +2,6 @@
 
 require_relative 'config/environment'
 
-map '/advertisment' do
-    run Rails.application
-end
+run Rails.application
+
 
