@@ -45,7 +45,7 @@ docker push aryan9600/ieeectf-pyjail:latest
 kubectl apply -f k8s
 kubectl patch configmap tcp-services --patch "$(cat k8s/patch.json)"
 kubectl patch deployment ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-controller-patch.yaml)"
-kubectl patch svc ingres-nginx-controller --patch "$(cat k8s/ingress-nginx-svc-patch.yaml)"
+kubectl patch svc ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-svc-patch.yaml)"
 
 kubectl set image deployments/advertisment-auth-deployment advertisment-auth=aryan9600/ieeectf-advertisment:$SHA
 kubectl set image deployments/dbsb-deployment dbsb=aryan9600/ieeectf-dontbesobrutal:$SHA
