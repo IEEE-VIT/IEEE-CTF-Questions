@@ -8,6 +8,5 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('rami/',include('ctf.urls')),
-
+    path('',include('ctf.urls')),
 ]

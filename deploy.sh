@@ -16,6 +16,8 @@ docker build -t aryan9600/ieeectf-jailed:latest -t aryan9600/ieeectf-jailed:$SHA
 
 docker build -t aryan9600/ieeectf-re:latest -t aryan9600/ieeectf-re:$SHA -f ./Reverse\ Engineering/ubuntu-re/Dockerfile ./Reverse\ Engineering/ubuntu-re
 
+docker build -t aryan9600/ieeectf-pyjail:latest -t aryan9600/ieeectf-pyjail:$SHA -f ./Misc/pyjail/Dockerfile ./Misc/pyjail
+
 docker push aryan9600/ieeectf-pwn:latest
 docker push aryan9600/ieeectf-dontbesobrutal:latest
 docker push aryan9600/ieeectf-nodejs-vm:latest
@@ -25,6 +27,7 @@ docker push aryan9600/ieeectf-ssrf:latest
 docker push aryan9600/ieeectf-jail:latest
 docker push aryan9600/ieeectf-jailed:latest
 docker push aryan9600/ieeectf-re:latest
+docker push aryan9600/ieeectf-pyjail:latest
 
 
 docker push aryan9600/ieeectf-pwn:$SHA
@@ -36,6 +39,7 @@ docker push aryan9600/ieeectf-ssrf:$SHA
 docker push aryan9600/ieeectf-jail:$SHA
 docker push aryan9600/ieeectf-jailed:$SHA
 docker push aryan9600/ieeectf-re:$SHA
+docker push aryan9600/ieeectf-pyjail:latest
 
 
 kubectl apply -f k8s
@@ -50,3 +54,4 @@ kubectl set image deployments/pwn-deployment pwn=aryan9600/ieeectf-pwn:$SHA
 kubectl set image deployments/re-deployment re=aryan9600/ieeectf-re:$SHA
 kubectl set image deployments/jail-deployment jail=aryan9600/ieeectf-jail:$SHA
 kubectl set image deployments/jailed-deployment jailed=aryan9600/ieeectf-jailed:$SHA
+kubectl set image deployments/pyjail-deployment pyjail=aryan9600/ieeectf-pyjail:$SHA
