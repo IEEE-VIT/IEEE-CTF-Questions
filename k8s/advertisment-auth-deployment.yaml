@@ -18,4 +18,4 @@ spec:
         - name: advertisment-auth
           ports:
             - containerPort: 3000
-          image: aryan9600/ieeectf-advertisment-auth
+          image: aryan9600/ieeectf-advertisment
