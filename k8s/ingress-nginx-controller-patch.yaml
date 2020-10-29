@@ -12,3 +12,5 @@ spec:
            hostPort: 9002
          - containerPort: 9003
            hostPort: 9003
+         - containerPort: 6969
+           hostPort: 6969
