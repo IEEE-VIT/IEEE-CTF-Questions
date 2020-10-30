@@ -44,7 +44,7 @@ docker push aryan9600/ieeectf-pyjail:latest
 
 kubectl apply -f k8s
 kubectl patch configmap tcp-services --patch "$(cat k8s/patch.json)"
-kubectl patch configmap ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-configmap.yaml)"
+# kubectl patch configmap ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-configmap.yaml)"
 kubectl patch deployment ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-controller-patch.yaml)"
 kubectl patch svc ingress-nginx-controller --patch "$(cat k8s/ingress-nginx-svc-patch.yaml)"
 
