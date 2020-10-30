@@ -15,7 +15,7 @@ app.post("/add",(req,res)=>{
     var v1=req.body.v1;
     var v2=req.body.v2;
     
-    console.log(typeof(v1));
+    // console.log(typeof(v1));
 
     const vm=require("vm");
     //try {
@@ -25,10 +25,10 @@ app.post("/add",(req,res)=>{
        // throw error;
      // }
       //else {
-        console.log(value);
-        console.log(typeof(value))
+        // console.log(value);
+        // console.log(typeof(value))
         var va1=JSON.stringify(value);
-        console.log(typeof(va1))
+        // console.log(typeof(va1))
         res.send(va1);
      // }
     //}

@@ -14,11 +14,11 @@ spec:
     rules:
         - http:
               paths:
-                  - path: /ssrf(/|$)(.*)
+                  - path: /web1(/|$)(.*)
                     backend:
                           serviceName: ssrf-cluster-ip-service
                           servicePort: 2640
-                  - path: /node-vm(/|$)(.*)
+                  - path: /web2(/|$)(.*)
                     backend:
                         serviceName: node-vm-cluster-ip-service
                         servicePort: 4000
