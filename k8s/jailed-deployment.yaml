@@ -5,7 +5,7 @@ metadata:
     labels:
         component: jailed
 spec:
-    replicas: 2
+    replicas: 5
     selector:
         matchLabels:
             component: jailed

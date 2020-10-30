@@ -1,21 +1,21 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-    name: re-deployment
-    labels:
-        component: re
-spec:
-    replicas: 2
-    selector:
-        matchLabels:
-            component: re
-    template:
-        metadata:
-            labels:
-                component: re
-        spec:
-            containers:
-                - name: re
-                  image: aryan9600/ieeectf-re
-                  securityContext:
-                      privileged: true
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+    # name: re-deployment
+    # labels:
+        # component: re
+# spec:
+    # replicas: 2
+    # selector:
+        # matchLabels:
+            # component: re
+    # template:
+        # metadata:
+            # labels:
+                # component: re
+        # spec:
+            # containers:
+                # - name: re
+                  # image: aryan9600/ieeectf-re
+                  # securityContext:
+                      # privileged: true

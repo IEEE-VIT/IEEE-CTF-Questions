@@ -6,7 +6,7 @@ metadata:
   labels:
     component: pyjail
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       component: pyjail

@@ -5,7 +5,7 @@ metadata:
     labels:
         component: pwn
 spec:
-    replicas: 3
+    replicas: 5
     selector:
         matchLabels:
             component: pwn

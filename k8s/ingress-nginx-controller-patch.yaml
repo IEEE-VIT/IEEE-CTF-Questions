@@ -6,8 +6,8 @@ spec:
         ports:
          - containerPort: 9000
            hostPort: 9000
-         - containerPort: 9001
-           hostPort: 9001
+         # - containerPort: 9001
+           # hostPort: 9001
          - containerPort: 9002
            hostPort: 9002
          - containerPort: 9003

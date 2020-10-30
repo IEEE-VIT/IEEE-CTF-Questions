@@ -3,9 +3,9 @@ spec:
   - nodePort: 31100
     port: 9000
     name: pwn
-  - nodePort: 31101
-    port: 9001
-    name: re
+  # - nodePort: 31101
+    # port: 9001
+    # name: re
   - nodePort: 31102
     port: 9002
     name: jail
