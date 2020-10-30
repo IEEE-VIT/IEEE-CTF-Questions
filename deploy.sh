@@ -39,7 +39,7 @@ docker push aryan9600/ieeectf-ssrf:$SHA
 docker push aryan9600/ieeectf-jail:$SHA
 docker push aryan9600/ieeectf-jailed:$SHA
 docker push aryan9600/ieeectf-re:$SHA
-docker push aryan9600/ieeectf-pyjail:latest
+docker push aryan9600/ieeectf-pyjail:$SHA
 
 
 kubectl apply -f k8s

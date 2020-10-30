@@ -127,5 +127,3 @@ STATICFILES_DIRS=[os.path.join(BASE_DIR,'static'),]
 
 
 STATIC_ROOT = '/static/'
-USE_X_FORWARDED_HOST = True
-FORCE_SCRIPT_NAME = /rami
