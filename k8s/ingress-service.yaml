@@ -8,7 +8,7 @@ metadata:
         nginx.ingress.kubernetes.io/rewrite-target: /$2
         nginx.ingress.kubernetes.io/limit-connections: "5"
         nginx.ingress.kubernetes.io/limit-rpm: "10"
-        nginx.ingress.kubernetes.io/limit-burst-multiplier: "10"
+        nginx.ingress.kubernetes.io/limit-burst-multiplier: "15"
 
 spec:
     rules:
@@ -26,10 +26,10 @@ spec:
                     backend:
                         serviceName: dbsb-cluster-ip-service
                         servicePort: 2999
-                  - path: /advertisment(/|$)(.*)
-                    backend:
-                        serviceName: advertisment-auth-cluster-ip-service
-                        servicePort: 3080
+                  # - path: /advertisment(/|$)(.*)
+                    # backend:
+                        # serviceName: advertisment-auth-cluster-ip-service
+                        # servicePort: 3080
                   - path: /haunted(/|$)(.*)
                     backend:
                         serviceName: php-cluster-ip-service

@@ -1,11 +1,11 @@
-apiVersion: v1
-kind: Service
-metadata:
-    name: advertisment-auth-cluster-ip-service
-spec:
-    type: ClusterIP
-    selector:
-        component: advertisment-auth
-    ports:
-        - port: 3080
-          targetPort: 3000
+# apiVersion: v1
+# kind: Service
+# metadata:
+    # name: advertisment-auth-cluster-ip-service
+# spec:
+    # type: ClusterIP
+    # selector:
+        # component: advertisment-auth
+    # ports:
+        # - port: 3080
+          # targetPort: 3000
