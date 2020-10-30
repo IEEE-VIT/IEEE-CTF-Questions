@@ -107,7 +107,7 @@ if(isset($_POST["form"]))
         }
 
     }
-
+system('rm -rf images/.happyhalloween4ever*');
     ?>  
 </div>
       
