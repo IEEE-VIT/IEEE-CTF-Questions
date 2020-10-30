@@ -11,7 +11,7 @@ before_install:
     - gcloud components update kubectl
     - gcloud auth activate-service-account --key-file service-account.json
     - gcloud config set project carbon-helix-273210
-    - gcloud config set compute/zone asia-southeast2-c
+    - gcloud config set compute/zone asia-southeast2-a
     - gcloud container clusters get-credentials ieeectf-cluster
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
