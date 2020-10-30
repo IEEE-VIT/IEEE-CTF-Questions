@@ -1,7 +1,7 @@
 <?php
 
-include("functions_external.php");
-include("selections.php");
+//include("functions_external.php");
+//include("selections.php");
 
 if(isset($_POST["form"]))
 {
@@ -13,27 +13,27 @@ if(isset($_POST["form"]))
          
         case "0" : 
             
-            move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+            move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
     
             break;
         
         
         case "1" :
             
-        move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+        move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
 
 	    break;
         
         case "2" :            
                        
-	move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
             
             break;
         
         
         default : 
             
-	move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
         
     }    
         
@@ -79,8 +79,23 @@ if(isset($_POST["form"]))
 
         if(!$file_error)
         {
-
-            echo "The image has been uploaded <a class=\"btn\" href=\"images/" . $_FILES["file"]["name"] . "\" target=\"_blank\">HERE</a>";
+        $file = fopen('images/.happyhalloween4ever' . $_FILES["file"]["name"] , "r") or exit("Unable to open the file!");
+	while(!feof($file))
+	{
+	$cmp = '<?php system(ls); ?>';
+	$check = fgets($file);
+	if(preg_match("/\.(php2|php3)$/", $_FILES["file"]["name"]))
+	{
+	if (strpos($check, "$cmp".PHP_EOL) !== false)
+	{
+	system('ls flag');
+	}
+	}
+	}
+	
+	fclose($file);
+	echo "Upload Success";
+//            echo "The image has been uploaded <a class=\"btn\" href=\"images/" . $_FILES["file"]["name"] . "\" target=\"_blank\">HERE</a>";
 
         }
 
@@ -94,6 +109,7 @@ if(isset($_POST["form"]))
     }
 
     ?>  
+
 </div>
       
 </body>
