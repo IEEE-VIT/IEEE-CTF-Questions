@@ -25,7 +25,7 @@ This is a hint as the user has to swirl the image in clockwise and anticlockwise
 Find IEEE-VIT Techloop on Medium
 Under the claps, you will find 2 JavaScript blogs, one reactjs which would not have any lead and the other of JS with IoT
 Under the JS with IoT Blog,there is a comment from a user named as My_Fav_No_JS_6
-On opening that user's profile, they find a URL (https://textsaver.flap.tv/lists/3nho)
+On opening that user's profile, they find a URL (https://textsaver.flap.tv/lists/3omc)
 That pastebin URL leads them to a JSfuck encoded string(which is encoding Javascript with just 6 characters):
 which on decoding says: 
 ```
