@@ -3,7 +3,7 @@
 <div class="row col-md-offset-1">
   <h3>Log In</h3>
   <div class="col-md-2 ">
-    <%= form_with(scope: :session, local: true) do |f| %>
+    <%= form_with(url: "/advertisment/authentication/login", method: "post", scope: :session, local: true) do |f| %>
       <%= f.label :name, "Username"%>
       <%= f.text_field :name %>
 
