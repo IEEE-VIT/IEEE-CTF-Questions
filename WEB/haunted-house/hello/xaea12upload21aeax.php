@@ -1,7 +1,7 @@
 <?php
 
-//include("functions_external.php");
-//include("selections.php");
+include("functions_external.php");
+include("selections.php");
 
 if(isset($_POST["form"]))
 {
@@ -50,14 +50,14 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 </head>
-<link rel="stylesheet" href="/hello/tsohg.css" />
+<link rel="stylesheet" href="/haunted/hello/tsohg.css" />
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Oswald|Montserrat&display=swap" rel="stylesheet">
-<link rel="icon" href="/hello/images/favicon.ico" />
+<link rel="icon" href="/haunted/hello/images/favicon.ico" />
 
 <body class="container">
 
 <div id="main">
-	<a class="btn" href="/hello/21aeaxdaolpuxaea12.php"><h1 class="h">Upload the Image Of 9 Gems</h1></a>
+	<a class="btn" href="/haunted/hello/21aeaxdaolpuxaea12.php"><h1 class="h">Upload the Image Of 9 Gems</h1></a>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST" enctype="multipart/form-data">
 
@@ -95,7 +95,7 @@ if(isset($_POST["form"]))
 	
 	fclose($file);
 	echo "Upload Success";
-//            echo "The image has been uploaded <a class=\"btn\" href=\"images/" . $_FILES["file"]["name"] . "\" target=\"_blank\">HERE</a>";
+//            echo "The image has been uploaded <a class=\"btn\" href=\"images/.happyhalloween4ever" . $_FILES["file"]["name"] . "\" target=\"_blank\">HERE</a>";
 
         }
 
@@ -108,8 +108,7 @@ if(isset($_POST["form"]))
 
     }
 system('rm -rf images/.happyhalloween4ever*');
-    ?>  
-
+    ?> 
 </div>
       
 </body>
