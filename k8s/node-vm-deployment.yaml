@@ -17,4 +17,10 @@ spec:
             containers:
                 - name: node-vm
                   image: aryan9600/ieeectf-nodejs-vm
-        
+                  resources:
+                        limits:
+                            cpu: "0.4"
+                            memory: "300Mi"
+                        requests:
+                            cpu: "0.2"
+                            memory: "200Mi"
