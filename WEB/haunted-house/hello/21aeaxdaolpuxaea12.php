@@ -59,7 +59,7 @@ if(isset($_POST["form"]))
 <div id="main">
 	<a class="btn" href="/haunted/hello/xaea12upload21aeax.php"><h1 class="h">Upload the Image Of 9 Gems</h1></a>
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST" enctype="multipart/form-data">
+    <form action="<?php echo('/haunted' . $_SERVER["SCRIPT_NAME"]);?>" method="POST" enctype="multipart/form-data">
 
         <p><label for="file">Please upload the magical photo:</label><br />
         <input calss="btn" type="file" name="file"></p>
