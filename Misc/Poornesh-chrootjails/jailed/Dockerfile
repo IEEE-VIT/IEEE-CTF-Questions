@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
 
-RUN useradd -M user1
-RUN echo 'user1:lmaoyes' | chpasswd
+RUN useradd -M jailer
+RUN echo 'jailer:keyissecret' | chpasswd
 
 RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
@@ -17,7 +17,7 @@ RUN chown -R root:root /jailed
 RUN chmod -R 755 .
 RUN chmod 1733 /tmp /var/tmp /dev/shm
 
-RUN echo "Match User user1" >> /etc/ssh/sshd_config
+RUN echo "Match User jailer" >> /etc/ssh/sshd_config
 RUN echo "  ChrootDirectory /jailed" >> /etc/ssh/sshd_config
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
