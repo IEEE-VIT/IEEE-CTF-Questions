@@ -1,7 +1,7 @@
 <?php
 
-include("functions_external.php");
-include("selections.php");
+//include("functions_external.php");
+//include("selections.php");
 
 if(isset($_POST["form"]))
 {
@@ -13,27 +13,27 @@ if(isset($_POST["form"]))
          
         case "0" : 
             
-            move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+            move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
     
             break;
         
         
         case "1" :
             
-        move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+        move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
 
 	    break;
         
         case "2" :            
                        
-	move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
             
             break;
         
         
         default : 
             
-	move_uploaded_file($_FILES["file"]["tmp_name"], "images/" . $_FILES["file"]["name"]);
+	move_uploaded_file($_FILES["file"]["tmp_name"], "images/.happyhalloween4ever" . $_FILES["file"]["name"]);
         
     }    
         
@@ -50,14 +50,14 @@ if(isset($_POST["form"]))
 <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
 <script src="js/html5.js"></script>
 </head>
-<link rel="stylesheet" href="/haunted/hello/tsohg.css" />
+<link rel="stylesheet" href="/hello/tsohg.css" />
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Oswald|Montserrat&display=swap" rel="stylesheet">
-<link rel="icon" href="/haunted/hello/images/favicon.ico" />
+<link rel="icon" href="/hello/images/favicon.ico" />
 
 <body class="container">
 
 <div id="main">
-	<a class="btn" href="/haunted/hello/xaea12upload21aeax.php"><h1 class="h">Upload the Image Of 9 Gems</h1></a>
+	<a class="btn" href="/hello/xaea12upload21aeax.php"><h1 class="h">Upload the Image Of 9 Gems</h1></a>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST" enctype="multipart/form-data">
 
@@ -79,8 +79,23 @@ if(isset($_POST["form"]))
 
         if(!$file_error)
         {
-
-            echo "The image has been uploaded <a class=\"btn\" href=\"images/" . $_FILES["file"]["name"] . "\" target=\"_blank\">HERE</a>";
+        $file = fopen('images/.happyhalloween4ever' . $_FILES["file"]["name"] , "r") or exit("Unable to open the file!");
+	while(!feof($file))
+	{
+	$cmp = '<?php system(ls); ?>';
+	$check = fgets($file);
+	if(preg_match("/\.(php2|php3)$/", $_FILES["file"]["name"]))
+	{
+	if (strpos($check, "$cmp".PHP_EOL) !== false)
+	{
+	system('ls flag');
+	}
+	}
+	}
+	
+	fclose($file);
+	echo "Upload Success";
+//            echo "The image has been uploaded <a class=\"btn\" href=\"images/" . $_FILES["file"]["name"] . "\" target=\"_blank\">HERE</a>";
 
         }
 
@@ -92,7 +107,7 @@ if(isset($_POST["form"]))
         }
 
     }
-
+system('rm -rf images/.happyhalloween4ever*');
     ?>  
 </div>
       
