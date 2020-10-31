@@ -17,6 +17,7 @@ RUN chown -R root:root /jailed
 RUN chmod -R 755 .
 RUN chmod 1733 /tmp /var/tmp /dev/shm
 
+RUN chsh -s /bin/bash jailer
 RUN echo "Match User jailer" >> /etc/ssh/sshd_config
 RUN echo "  ChrootDirectory /jailed" >> /etc/ssh/sshd_config
 EXPOSE 22
