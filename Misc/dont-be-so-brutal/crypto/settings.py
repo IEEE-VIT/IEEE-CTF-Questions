@@ -55,7 +55,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'crypto.urls'
 
-LOGIN_REDIRECT_URL = 'brute'
+LOGIN_REDIRECT_URL = '/rami/dontbesobrutal/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
