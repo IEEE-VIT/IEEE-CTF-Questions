@@ -1,3 +1,4 @@
 WEB/Ajmal NodeJS VM/node_modules/
 WEB/Ajmal SSRF/node_modules
 *.pyc
+*.sqlite3
