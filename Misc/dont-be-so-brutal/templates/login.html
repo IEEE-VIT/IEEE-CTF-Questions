@@ -12,20 +12,17 @@
 <body style="background-color: black; color: white;">
 
 <br><br><br>
-<div class="container">
-  <div class="main">
-  <h2>Login</h2>
-  <form class="form-signin" method="POST" action="{% url 'login' %}">
-    <h1 class="h3 mb-3 font-weight-normal">Welcome Back user</h1>
-    {% csrf_token %}
-    <label class="sr-only">Username</label>
-    <input type="text" class="md-textarea form-control" name="username" placeholder="Username" required >  
-   <br>
-    <input type="password" name="password" class="form-control" placeholder="Password" required>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-  </div>
-  </div>
 
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h2>Login</h2>
+<form method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">Login</button>
+</form>
+{% endblock %} 
 
   
 <script>

@@ -27,7 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['34.101.223.147', 'chall.ieeevit.org']
 
-USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_HOST = False
 FORCE_SCRIPT_NAME = '/rami'
 
 
