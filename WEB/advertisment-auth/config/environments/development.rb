@@ -54,6 +54,8 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  config.action_controller.allow_forgery_protection = false
+  config.hosts = nil
   config.web_console.whitelisted_ips = ['10.0.0.0/8', '172.16.0.0/12', '192.168.0.0/16']
 
   # Raises error for missing translations.

@@ -25,7 +25,7 @@ SECRET_KEY = 'ydh21o)nm3ldq-%jd6!0z%9bt!@08ho=tq4+sk!dmmfj^et%g#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['34.101.223.147', 'chall.ieeevit.org']
+ALLOWED_HOSTS = ['34.101.223.147', 'chall.ieeevit.org',] 
 
 USE_X_FORWARDED_HOST = True
 FORCE_SCRIPT_NAME = '/rami'

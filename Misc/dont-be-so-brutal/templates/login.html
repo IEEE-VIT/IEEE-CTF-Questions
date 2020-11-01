@@ -4,27 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-{%load static%}
-
-  <script src="{% static 'js/md5.min.js' %}"></script>
 
 </head>
 <body style="background-color: black; color: white;">
 
 <br><br><br>
 
-{% block title %}Login{% endblock %}
 
 {% block content %}
-<h2>Login</h2>
-<form method="post">
-{% csrf_token %}
-{{ form.as_p }}
-<button type="submit">Login</button>
-</form>
-{% endblock %} 
+  <h1>Log-in</h1>
+  <form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Log in"></p>
+  </form>
+{% endblock %}
 
-  
 <script>
   var attempt = 3;
 function validate(){
@@ -38,7 +33,7 @@ return false;
 }
 }
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </body>
 </html>
+
