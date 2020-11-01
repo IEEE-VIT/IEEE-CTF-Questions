@@ -12,8 +12,8 @@ class UsersController < ApplicationController
   def show
    respond_to do |format|
     if @user.id === TRUE
-      format.html { redirect_to @user}
-      format.json { render :show, status: :ok, location: @user }
+      format.html { redirect_to "/advertisment/#{@user}"}
+      format.json { render :show, status: :ok, location: "/advertisment/#{@user}" }
     else
       format.html { render :show }
       format.json { render json: @user.errors, status: :unprocessable_entity }
@@ -38,8 +38,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+        format.html { redirect_to "/advertisment/#{@user}", notice: 'User was successfully created.' }
+        format.json { render :show, status: :created, location: "/advertisment/#{@user}" }
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
