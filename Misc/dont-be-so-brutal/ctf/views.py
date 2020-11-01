@@ -18,7 +18,7 @@ def user_login(request):
                                username=cd['username'],
                                password=cd['password'])
            if user is not None:
-               return JsonResponse({"TOKEN": "j3231nejfnwefnefwkenf"})
+               return JsonResponse({"TOKEN": "j3231nejfnwefnefwkenf", "URL": "/dontbesobrutal"})
            else:
                return HttpResponse('Invalid login')
    else:
