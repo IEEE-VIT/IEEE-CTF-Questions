@@ -1,82 +1,35 @@
-# ZIP-ZAP-ZOOP:
-### WRITEUP
-1. use grep to cat in the first jail and then grab the username and password of next jail from a text file
-2. goto next jail and use awk to cat a file to get a password
-3. go back to first jail and there will be a link in one of the text file
-4. that link will take you to a zip file, now u have to provide the password to view the contents in zip file
-5. you will able to see a text file with flag in it.
+# CTF Name: Jails : ZIP-ZAP-ZOOP
 
-## INSTRUCTIONS
-### NOTE: SANDBOXING IS REQUIRED FOR THIS CHALLENGE
-<br /><br />
-mkdir /root/jailed<br />
-cd jailed<br />
-mkdir bin/ lib64/ lib/<br />
-ldd /bin/bash<br />
-cp /lib/x86_64-linux-gnu/libtinfo.so.5 lib/ (DEPENDS ON WHAT IS LISTED IN THE PREVIOUS STEP)<br />
-cp /lib/x86_64-linux-gnu/libdl.so.2 lib/<br />
-cp /lib/x86_64-linux-gnu/libc.so.6 lib/<br />
-cp /lib64/ld-linux-x86-64.so.2 lib64/<br />
-cp /bin/bash bin/<br />
-<br />
-SIMILARLY ADD FOLLOWING COMMANDS:
-<br /><br />
-ls<br />
-cat (after adding rename it to grep)<br />
-zip<br />
-unzip<br />
-id<br />
-sudo<br />
-<br />
-adduser player<br />
-nano /etc/ssh/sshd_config<br />
-(Go to the end of the file and add the following)<br />
- #define username to apply chroot jail to <br />
-Match User player <br />
- #specify chroot jail <br />
-ChrootDirectory /root/jailed <br />
-<br />
-<br />
-service ssh restart<br />
-<br />
-### NOW SIMILARLY CREATE ANEW CHROOT JAIL
-<br /><br />
-mkdir /root/jail<br />
-cd jail<br />
-mkdir bin/ lib64/ lib/<br />
-ldd /bin/bash<br />
-cp /lib/x86_64-linux-gnu/libtinfo.so.5 lib/ (DEPENDS ON WHAT IS LISTED IN THE PREVIOUS STEP)<br />
-cp /lib/x86_64-linux-gnu/libdl.so.2 lib/<br />
-cp /lib/x86_64-linux-gnu/libc.so.6 lib/<br />
-cp /lib64/ld-linux-x86-64.so.2 lib64/<br />
-cp /bin/bash bin/<br />
-<br />
-SIMILARLY ADD FOLLOWING COMMANDS:
-<br /><br />
-ls<br />
-cat (after adding rename it to grep)<br />
-zip<br />
-unzip<br />
-id<br />
-sudo<br />
-<br />
-adduser jailer<br />
-nano /etc/ssh/sshd_config<br />
-(Go to the end of the file and add the following)<br />
- #define username to apply chroot jail to <br />
-Match User jailer<br />
- #specify chroot jail<br />
-ChrootDirectory /root/jail<br />
-<br />
-<br />
-service ssh restart<br />
-<br />
-<br />
-FOR OTHER FILES AND FOLDERS, PLEASE REFER TO THE DIRECTORIES<br />
-THERE ARE FEW HIDDEN DIRECTORIES AND FILES TOO! DO CHECK THEM OUT.<br />
-THERE IS A ZIP FILE WHICH IS Password Protected that contains the flag<br />
-The Password of that zip file is: IEEE-CTF-AUTO-JIGGLER-KEY-PASS
+![date](https://img.shields.io/badge/date-08.11.2020-brightgreen.svg)  
+![JAILS category](https://img.shields.io/badge/category-jails-lightgrey.svg)
+![score](https://img.shields.io/badge/score-100-blue.svg)
+![solves](https://img.shields.io/badge/solves-0008-brightgreen.svg)
+[![author](https://img.shields.io/badge/author-PoorneshAdhithya-blue)](https://github.com/Tesla369)
 
-### FLAG
-FLAG FORMAT: IEEECTF{} <br />
-FLAG: IEEECTF{B45H_3RR0R!_PL3453_TRY_4G41N}
+## Description
+jail number 9003 is open but don’t know how to open it! <br />
+Hints:
+`Ctrl+F doesn’t work in CLI, How to find it?`
+
+## Attached files
+-  URL to ssh
+
+## Summary
+It is a Jails question based on figuring out a way to escape the jail/trying to view contents of some files in an unusual way, which might lead to obtain the flag.
+
+## Detailed solution
+
+1. use grep instead of cat in the first jail and then grab the username and password of next jail from a text file `.flag/.ctf`. View bin directory to know about all commands accepted in the jail. 
+2. goto next jail and use awk instead of cat and display the contents in a file to get a password which is encoded in base 64
+3. Decode it and go back to first jail and there will be a link in one of the text file `.flag/flag.txt`
+4. that link will take you to a zip file, now u have to provide the password to extract and to view the contents in zip file
+5. you can obtain the flag from the text file flag.txt which has been extracted.
+
+## Screenshots
+ZIP file containing all screenshots related to this challenge:
+<a href="https://bit.ly/zipzapzoop">Screenshots</a>
+
+## Flag
+```
+IEEECTF{B45H_3RR0R!_PL3453_TRY_4G41N}
+```

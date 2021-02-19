@@ -1,20 +1,33 @@
-# LOCKED-1
-### NOTE: SANDBOXING IS REQUIRED FOR THIS CHALLENGE
-1. Download Unbreakable_Lock file<br />
-2. gdb Unbreakable_Lock<br />
-3. disassemble main<br />
-4. break *main<br />
-6. break *main+xyz<br />
-7. set $eax=0<br />
-8. ni<br />
-9. encoded flag<br />
-10. decrypt the encoded enigma to obtain the flag<br />
-11. You will find the flag = ieeectf{h4kun4_mat4ta_f0r3v3r}<br />
+# CTF Name: Reverse-Engineering: Unbreakable_Lock
 
-### Environment Variables:
-FLG = zzdiuwo{a4ana4_ddk4bh_t0q3e3h}<br />
-FCMP = Unknown_FLG_CoMParis0n
+![date](https://img.shields.io/badge/date-08.11.2020-brightgreen.svg)  
+![PWN category](https://img.shields.io/badge/category-re-lightgrey.svg)
+![score](https://img.shields.io/badge/score-100-blue.svg)
+![solves](https://img.shields.io/badge/solves-0000-brightgreen.svg)
+[![author](https://img.shields.io/badge/author-PoorneshAdhithya-blue)](https://github.com/Tesla369)
 
-### FLAG
-FLAG FORMAT: ieeectf{} <br />
-FLAG: ieeectf{h4kun4_mat4ta_f0r3v3r}
+## Description
+Hey, I tried a lot of combinations. It seems like it's still locked, Could you help me to open it? <br />
+Hints:
+`Y0u must Resgister y0ur value in the hist0ry registers`
+
+## Attached files
+-  Unbreakable_Lock
+
+## Summary
+It is Reverse Engineering based question where one must tamper the rergisters of $eax in order to fetch the flag, This challenge would require gdb for disassembling.
+
+## Detailed solution
+
+1. run locked binary with a key as an argument
+2. Try to input different characters and increase the length of the characters until it results in a segmentation fault.
+3. Now run the binary with gdb and `disas main`, now you can see a strcmp, which is unsafe as it doesn't strict compare 2 strings.
+4. Set a breakpoint after strcmp, and run the program with any argument as a key.
+5. Now in that breakpoint, tamper the $eax value to 0.
+6. Now if you continue the program the FLAG is displayed.
+7. A Video POC writeup is attached for complete Walkthrough of this challenge with explanation. <a href="http://bit.ly/reveng-ctf">Walkthrough Video</a>
+
+## Flag
+```
+IEEECTF{H4KUN4_MAT4TA_F0r3V3R}
+```
