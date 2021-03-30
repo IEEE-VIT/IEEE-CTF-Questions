@@ -35,6 +35,22 @@ To get started:
 * `git push origin my-amazing-challenge`
 * Open a pull request :)
 
+## Tools and Technologies Used
+
+#### Questions
+
+* Django
+* node.js
+* Ruby on Rails
+* PHP
+* C and GDB
+ 
+#### Infra
+
+* Docker
+* Kuberentes
+* Google Kuberentes Engine
+
 ## Guidelines
 
 ### Flag
