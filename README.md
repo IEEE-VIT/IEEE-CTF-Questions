@@ -6,7 +6,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/aryan9600/IEEE-CTF-Questions.svg)](https://github.com/IEEE-VIT/IEEE-CTF-Questions/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg?style=flat-square)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-yellow.svg?st)](https://github.com/IEEE-VIT/IEEE-CTF-Questions/tree/master)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-yellow.svg?st)](https://github.com/IEEE-VIT/IEEE-CTF-Questions/tree/master#contributors-)
 
 ## About
 This repository contains all the challenges for `IEEE-CTF 2020` along with all the config files that were used to deploy them on a k8s cluster hosted on GKE.
